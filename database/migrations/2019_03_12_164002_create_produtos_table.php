@@ -20,7 +20,7 @@ class CreateProdutosTable extends Migration
             $table->Decimal('preco',5,2);
             $table->String('peso');
             $table->Integer('categoria_id')->unsigned();
-            $table->foreign('categoria_id')->references('id')->on('categoria');
+            $table->foreign('categoria_id')->references('id')->on('categorias');
             $table->timestamps();
         });
     }
